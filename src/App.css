@@ -21,10 +21,15 @@
   height: 100%;
 }
 
+.footer{
+  background: #1f4037; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1f4037, #99f2c8); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+}
+
 .avatar-img{
   height: 250px;
   padding: 40px;
-  
 }
 
 .banner-text{
