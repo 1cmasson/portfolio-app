@@ -64,6 +64,28 @@ const Projects = () =>{
                         </Card>
                     </div>
                 </Cell>
+
+                <Cell col={12}>
+                    <div className="projects-grid">
+                        
+                        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                            <CardTitle style={{color: 'black', height: '176px', background:'url(https://colorlib.com/wp/wp-content/uploads/sites/2/react-dev-tools-logo.jpg) center/cover'}}>
+                                BOLT
+                            </CardTitle>
+
+                            <CardText style ={{height: '75px'}}>
+                            This application is to organize a list of bays based on it characteristics. 
+                            </CardText>
+
+                            <CardActions border>
+                                    <Button colored href="https://github.com/carninojo15/bolt">Github</Button>
+                                    
+                                    <Button colored href="https://goofy-joliot-9dcc70.netlify.app/" style ={{position: "absolute",
+                                    right: "10px"}} >Application</Button>
+                            </CardActions> 
+                        </Card>
+                    </div>
+                </Cell>
             </Grid>
         </div>
     )
