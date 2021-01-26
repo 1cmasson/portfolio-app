@@ -25,7 +25,7 @@ class LandingPage extends Component{
                            <h1>Who Am I?</h1>
                            <hr/>
                            <p>My name is Carlos Masson, I am a senior from Florida International University graduating August of 2021 with a bachelors 
-                               degree in Computer Science. I have experience in programming and look to advance my knowledge in technology. I aspire to be a systems engineer for the same company I worked for 5 years, The Home Depot.   
+                               degree in Computer Science. I have experience in programming and look to advance my knowledge in technology. I aspire to be a systems engineer for the same company I have worked 5 years for, The Home Depot.   
                            </p>
                            <div className="social-links">
                                 
