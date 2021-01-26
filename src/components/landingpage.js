@@ -1,23 +1,32 @@
 import React, {Component} from 'react';
-import {Grid, Cell} from 'react-mdl';
+import { Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText } from 'react-mdl';
+import Education from './education';
+import Experience from './experience';
+import ExtraCurriculur from './extracurriculur';
+import profile from './assets/ProfilePic.png'
+
+
 
 class LandingPage extends Component{
     render(){
         return(
-            
+            <div>
+            {/*HEADER*/}
             <div style = {{width: '100%', height: '100%'}}>
                 <Grid className ='landing-grid'>
                     <Cell col={12}>
                         <img
-                        src = "https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/7_avatar-512.png"
+                        src = {profile}
                         alt="avatar"
                         className="avatar-img"
                         />
 
                        <div className="banner-text">
-                           <h1>Programmer</h1>
+                           <h1>Who Am I?</h1>
                            <hr/>
-                           <p>HTML/CSS | JavaScript | Java | C++ | Angular | React | NodeJS | Github</p>
+                           <p>My name is Carlos Masson, I am a senior from Florida International University graduating August of 2021 with a bachelors 
+                               degree in Computer Science. I have experience in programming and look to advance my knowledge in technology. I aspire to be a systems engineer for the same company I worked for 5 years, The Home Depot.   
+                           </p>
                            <div className="social-links">
                                 
                                 {/*Github */}
@@ -36,6 +45,202 @@ class LandingPage extends Component{
                     </Cell>
                 </Grid>
             </div>
+
+            {/* PROJECTS*/}
+
+            <div className="category-tabs">
+            <h1 style={{textAlign:'center'}}>Projects</h1>
+            <Grid>
+            <Cell col={12}>
+                    <div className="projects-grid">
+                        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                            
+                            <CardTitle style={{color: 'black', height: '176px', 
+                            background:'url(https://christianliebel.com/wp-content/uploads/2016/02/Angular2.png) center/cover'}}>
+                                Voting BlockChain
+                            </CardTitle>
+
+                            <CardText style ={{height: '75px'}}>
+                            This project is a blockchain voting system. 
+                            </CardText>
+
+                            <CardActions border>
+                                <Button colored href="https://github.com/carninojo15/blockchain">Github</Button>
+                                <Button colored href="https://vigilant-leavitt-4133eb.netlify.app/" style ={{position: "absolute",
+                                right: "10px"}} >Application</Button>
+                            </CardActions> 
+
+                            <CardMenu style ={{color: '#fff'}}>
+                                <IconButton name="share"/>
+                            </CardMenu>
+
+                        </Card>
+
+                        <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginTop:'20px'}}>
+                        
+                        <CardTitle style={{color: 'black', height: '176px', background:'url(https://colorlib.com/wp/wp-content/uploads/sites/2/react-dev-tools-logo.jpg) center/cover'}}>Covid-19 Tracker</CardTitle>
+                        
+                        <CardText style ={{height: '75px'}}>
+                        This application is a Covid-19 tracker that catches data from an API to display a line chart on number of global cases and deaths.
+                        </CardText>
+                        
+                        <CardActions border>
+                        <Button colored href="https://github.com/carninojo15/covid-19-tracker">Github</Button>
+                        <Button colored href="https://zealous-bhabha-ac12e5.netlify.app/" style ={{position: "absolute",
+                        right: "10px"}} >Application</Button>
+                        </CardActions> 
+                        
+                        </Card>                        
+                        
+                        <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginTop:'20px'}}>
+                            <CardTitle style={{color: 'black', height: '176px', background:'url(https://colorlib.com/wp/wp-content/uploads/sites/2/react-dev-tools-logo.jpg) center/cover'}}>
+                                My Personal Website
+                            </CardTitle>
+
+                            <CardText style ={{height: '75px'}}>
+                            This application is my own website which is this website. 
+                            </CardText>
+
+                            <CardActions border>
+                                    <Button colored href="https://github.com/carninojo15/portfolio-app">Github</Button>
+                                    
+                                    <Button colored href="https://admiring-lumiere-be3c39.netlify.app/" style ={{position: "absolute",
+                                    right: "10px"}} >Application</Button>
+                            </CardActions> 
+                        </Card>
+                    </div>
+                </Cell>
+
+                <Cell col={12}>
+                    <div className="projects-grid">
+                        
+                        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                            <CardTitle style={{color: 'black', height: '176px', background:'url(https://colorlib.com/wp/wp-content/uploads/sites/2/react-dev-tools-logo.jpg) center/cover'}}>
+                                BOLT
+                            </CardTitle>
+
+                            <CardText style ={{height: '75px'}}>
+                            This application is to organize a list of bays based on it characteristics. 
+                            </CardText>
+
+                            <CardActions border>
+                                    <Button colored href="https://github.com/carninojo15/bolt">Github</Button>
+                                    
+                                    <Button colored href="https://goofy-joliot-9dcc70.netlify.app/" style ={{position: "absolute",
+                                    right: "10px"}} >Application</Button>
+                            </CardActions> 
+                        </Card>
+                    </div>
+                </Cell>
+            </Grid>
+        </div>
+
+        {/*Resume*/}
+        <div>
+        <h1 style={{
+                    textAlign:'center',
+                    background: '#1f4037', /* fallback for old browsers */
+                    background: '-webkit-linear-gradient(to right, #1f4037, #99f2c8)', /* Chrome 10-25, Safari 5.1-6 */
+                    background: 'linear-gradient(to right, #1f4037, #99f2c8)'
+                    }}>Resume</h1>
+                <Grid style={{
+                    textAlign:'center',
+                    background: '#1f4037', /* fallback for old browsers */
+                    background: '-webkit-linear-gradient(to right, #1f4037, #99f2c8)', /* Chrome 10-25, Safari 5.1-6 */
+                    background: 'linear-gradient(to right, #1f4037, #99f2c8)',
+                    marginTop:'-25px'
+                    }}>
+                    <Cell col = {4}> 
+                    <div style={{
+                        textAlign:'center'
+                        
+                        }}>
+                        <img
+                        src = {profile}
+                        alt="avatar"
+                        style={{height: "200px"}}
+                        />
+                    </div>
+
+                    <h2 style={{paddingTop:'1em'}}>Carlos Masson</h2>
+                    <h4>Programmer</h4>
+                    <hr style={{borderTop: '3px solid  rgb(4, 78, 44)', width: '100%'}}/>
+                    <p> HTML/CSS | JavaScript | Java | C++ | Angular | React | NodeJS | Github</p>
+
+                    <hr style={{borderTop: '3px solid  rgb(4, 78, 44)', width: '100%'}}/>
+                    <h5>Phone</h5>
+                    <p>(305) 781 5123</p>
+                    <h5>Email</h5>
+                    <p>carlosmasson96@gmail.com</p>
+
+                    <hr style={{borderTop: '3px solid  rgb(4, 78, 44)', width: '100%'}}/>
+
+                    </Cell>
+                    
+                    <Cell className ="resume-right-col" col = {8}> 
+                    <h2>Education</h2>
+
+                    <Education
+                    startYear={2015}
+                    endYear={2019}
+                    schoolName="Miami-Dade College"
+                    degree = "Associates in Computer Science"
+                    schoolDescription="Participated in Miami Dade Technology Club as a Chief Operations Officer. Was involved with the development of a website for the club. Certified as a Business Specialist for taking courses such as Marketing and Business Calculus."
+                    />
+
+                <Education
+                    startYear={2019}
+                    endYear={"Spring "+ 2021}
+                    schoolName="Florida International University"
+                    degree = "Bachelors in Computer Science"
+                    schoolDescription="A member of Upsilon Pi Epsilon (UPE), the largest tech organization in FIU. Contribute weekly to the Web Development team by making Web Applications using Python and Django. Participated in Shell Hacks, the largest hackathon in Florida, and worked with a team to create an app in JavaScript."
+                    />
+
+                <hr style={{borderTop: '3px solid  rgb(4, 78, 44)'}}/>    
+
+                <h2>Experience</h2>     
+                <Experience
+                    startYear={2016}
+                    endYear ={"currently working"}
+                    company={"The Home Depot"}
+                    position={"Merchandising Execution Associate"}
+                    jobDescription="Guide customers in choosing items that reflect personal style and preference. Facilitate monthly and quarterly physical inventory counts. Describe merchandise as well as explain the operation of merchandise to customers. Design displays to make store experience interactive and engaging. Successfully complete projects individually and with team members."
+                />     
+
+                <hr style={{borderTop: '3px solid  rgb(4, 78, 44)'}}/>
+
+                <h2>Extra-Curriculur Activities</h2>
+                <ExtraCurriculur
+                 startYear={"Spring 2019"}
+                 endYear={"Summer 2019"}
+                 organization={"Miami-Dade Tech Club (North Campus)"}
+                 position={"Chief Operations Officer"}
+                 clubDescription="Arranged successful meeting around school hours to assure learning first. Created excellent collaboration skills between my team members and I, both inexperienced and experienced. Increased leadership skills around the school. Oversaw and participated in the team building of the club’s websites.
+                "
+                
+                />  
+
+                <ExtraCurriculur
+                 startYear={"Spring " + 2019}
+                 endYear={"Spring " + 2020}
+                 organization={"Upsilon Pi Epsilon"}
+                 position={"Associate Member"}
+                 clubDescription=" Participated in creating a website, worked with team members to complete various projects, accurately used time management skills to contribute personal work. Used Django framework and Python language to develop website.
+                "
+                />      
+
+                <hr style={{borderTop: '3px solid  rgb(4, 78, 44)'}}/>
+                
+
+                    </Cell>
+                </Grid>
+
+                
+            </div>
+
+        
+        
+        </div>
         )
     }
 }

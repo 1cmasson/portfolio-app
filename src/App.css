@@ -45,6 +45,13 @@
   font-weight: bold;
   color: white;
 }
+.social-links{
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin: auto;
+}
+
 
 .banner-text hr{
   border-top: 5px dotted white;
@@ -58,12 +65,7 @@
   padding: 19px;
 }
 
-.social-links{
-  display: flex;
-  justify-content: space-between;
-  width: 20%;
-  margin: auto;
-}
+
 
 .social-links i{
   color:white;
@@ -122,4 +124,26 @@
   background: #27221F;
   color: white;
   padding: 2em;
+}
+
+@media screen and (max-width: 600px){
+  .banner-text h1{
+    font-size:40px;
+  }
+
+  .social-links{
+    width: 60%;
+  }
+
+  hr{
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 1050px){
+  .projects-grid{
+    display: grid;
+  }
+
 }
