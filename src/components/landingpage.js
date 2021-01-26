@@ -136,20 +136,9 @@ class LandingPage extends Component{
         </div>
 
         {/*Resume*/}
-        <div>
-        <h1 style={{
-                    textAlign:'center',
-                    background: '#1f4037', /* fallback for old browsers */
-                    background: '-webkit-linear-gradient(to right, #1f4037, #99f2c8)', /* Chrome 10-25, Safari 5.1-6 */
-                    background: 'linear-gradient(to right, #1f4037, #99f2c8)'
-                    }}>Resume</h1>
-                <Grid style={{
-                    textAlign:'center',
-                    background: '#1f4037', /* fallback for old browsers */
-                    background: '-webkit-linear-gradient(to right, #1f4037, #99f2c8)', /* Chrome 10-25, Safari 5.1-6 */
-                    background: 'linear-gradient(to right, #1f4037, #99f2c8)',
-                    marginTop:'-25px'
-                    }}>
+        <div className="resume-title">
+            <h1>Resume</h1>
+                <Grid className="grid-background">
                     <Cell col = {4}> 
                     <div style={{
                         textAlign:'center'

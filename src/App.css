@@ -126,6 +126,21 @@
   padding: 2em;
 }
 
+.resume-title h1{
+  text-align:center;
+  background: #1f4037; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1f4037, #99f2c8); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+}
+
+.resume-title .grid-background{
+  text-align:center;
+  background: #1f4037; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1f4037, #99f2c8); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+  margin-top:-25px;
+}
+
 @media screen and (max-width: 600px){
   .banner-text h1{
     font-size:40px;
