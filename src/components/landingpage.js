@@ -209,7 +209,7 @@ class LandingPage extends Component{
 
                 <ExtraCurriculur description="  Participated in Shell Hacks, the largest hackathon in Florida, and worked with a team to create a block chain interface in JavaScript called Votechain. "/>     
 
-                <ExtraCurriculur description="  Created a personal portfolio website to showcase my projects, the website can be found here: carlosmasson.com"/>     
+                <ExtraCurriculur description="  Created a personal portfolio website to showcase my projects."/>     
 
                 <hr style={{borderTop: '3px solid  rgb(4, 78, 44)'}}/>
                 
