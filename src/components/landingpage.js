@@ -154,7 +154,7 @@ class LandingPage extends Component{
                     <h2 style={{paddingTop:'1em'}}>Carlos Masson</h2>
                     <h4>Programmer</h4>
                     <hr style={{borderTop: '3px solid  rgb(4, 78, 44)', width: '100%'}}/>
-                    <p> HTML/CSS | JavaScript | Java | C++ | Angular | React | NodeJS | Github</p>
+                    <p> Python | Spring MVC | React | OSINT | OWASP | Burp Suite | Linux Terminal | IntelliJ</p>
 
                     <hr style={{borderTop: '3px solid  rgb(4, 78, 44)', width: '100%'}}/>
                     <h5>Phone</h5>
@@ -174,7 +174,7 @@ class LandingPage extends Component{
                     endYear={2019}
                     schoolName="Miami-Dade College"
                     degree = "Associates in Computer Science"
-                    schoolDescription="Participated in Miami Dade Technology Club as a Chief Operations Officer. Was involved with the development of a website for the club. Certified as a Business Specialist for taking courses such as Marketing and Business Calculus."
+                    
                     />
 
                 <Education
@@ -182,7 +182,7 @@ class LandingPage extends Component{
                     endYear={"Spring "+ 2021}
                     schoolName="Florida International University"
                     degree = "Bachelors in Computer Science"
-                    schoolDescription="A member of Upsilon Pi Epsilon (UPE), the largest tech organization in FIU. Contribute weekly to the Web Development team by making Web Applications using Python and Django. Participated in Shell Hacks, the largest hackathon in Florida, and worked with a team to create an app in JavaScript."
+                    
                     />
 
                 <hr style={{borderTop: '3px solid  rgb(4, 78, 44)'}}/>    
@@ -198,25 +198,18 @@ class LandingPage extends Component{
 
                 <hr style={{borderTop: '3px solid  rgb(4, 78, 44)'}}/>
 
-                <h2>Extra-Curriculur Activities</h2>
-                <ExtraCurriculur
-                 startYear={"Spring 2019"}
-                 endYear={"Summer 2019"}
-                 organization={"Miami-Dade Tech Club (North Campus)"}
-                 position={"Chief Operations Officer"}
-                 clubDescription="Arranged successful meeting around school hours to assure learning first. Created excellent collaboration skills between my team members and I, both inexperienced and experienced. Increased leadership skills around the school. Oversaw and participated in the team building of the club’s websites.
-                "
-                
-                />  
+                <h2>ExtraCurricular Activities</h2>
+                <ExtraCurriculur description=" Coordinated with class mates to establish a technology club for Miami Dade North Campus."/>  
 
-                <ExtraCurriculur
-                 startYear={"Spring " + 2019}
-                 endYear={"Spring " + 2020}
-                 organization={"Upsilon Pi Epsilon"}
-                 position={"Associate Member"}
-                 clubDescription=" Participated in creating a website, worked with team members to complete various projects, accurately used time management skills to contribute personal work. Used Django framework and Python language to develop website.
-                "
-                />      
+                <ExtraCurriculur description="  A member of Upsilon Pi Epsilon (UPE), the largest tech organization in Florida International University."/> 
+
+                <ExtraCurriculur description="  Contributed weekly to the Web Development team by developing a COVID-19 tracker."/> 
+                
+                <ExtraCurriculur description="  Certified as a Business Specialist for taking courses such as Marketing and Business Calculus."/>
+
+                <ExtraCurriculur description="  Participated in Shell Hacks, the largest hackathon in Florida, and worked with a team to create a block chain interface in JavaScript called Votechain. "/>     
+
+                <ExtraCurriculur description="  Created a personal portfolio website to showcase my projects, the website can be found here: carlosmasson.com"/>     
 
                 <hr style={{borderTop: '3px solid  rgb(4, 78, 44)'}}/>
                 
