@@ -12,7 +12,7 @@ class LandingPage extends Component{
         return(
             <div>
             {/*HEADER*/}
-            <div style = {{width: '100%', height: '100%'}}>
+            <div style = {{width: '100%', height: '950px'}}>
                 <Grid className ='landing-grid'>
                     <Cell col={12}>
                         <img
