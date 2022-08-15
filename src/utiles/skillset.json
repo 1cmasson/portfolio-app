@@ -1,0 +1,58 @@
+[
+  {
+    "lbl": "React",
+    "v": 100
+  },
+  {
+    "lbl": "Vue",
+    "v": 90
+  },
+  {
+    "lbl": "Node.js",
+    "v": 100
+  },
+  {
+    "lbl": "NestJS",
+    "v": 100
+  },
+  {
+    "lbl": "JavaScript",
+    "v": 100
+  },
+  {
+    "lbl": "TypeScript",
+    "v": 100
+  },
+  {
+    "lbl": "Express",
+    "v": 80
+  },
+  {
+    "lbl": "CSS",
+    "v": 100
+  },
+  {
+    "lbl": "GraphQL",
+    "v": 90
+  },
+  {
+    "lbl": "Software Architecture & Design",
+    "v": 90
+  },
+  {
+    "lbl": "API Integration",
+    "v": 90
+  },
+  {
+    "lbl": "Database Architecture",
+    "v": 80
+  },
+  {
+    "lbl": "UX & UI",
+    "v": 90
+  },
+  {
+    "lbl": "Agile Methodology",
+    "v": 80
+  }
+]
