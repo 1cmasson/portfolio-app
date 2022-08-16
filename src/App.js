@@ -1,8 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Landing from './Containers/Landing';
 import Dashboard from './Containers/Projects/Dashboard';
-// CSS
+
+// styles
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+// Import Animation style
 import 'animate.css';
+// Import custom styles
 import './assets/css/bootstrap.min.css';
 import './assets/css/plugins.css';
 import './assets/css/style.css';

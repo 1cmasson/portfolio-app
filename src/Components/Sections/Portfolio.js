@@ -8,6 +8,11 @@ import gallery3 from '../../assets/images/gallery/gallary3.png';
 import gallery4 from '../../assets/images/gallery/gallary4.png';
 import gallery5 from '../../assets/images/gallery/gallary5.png';
 import gallery6 from '../../assets/images/gallery/gallary6.png';
+import your_manor1 from '../../assets/images/gallery/your-manor/1.png';
+import your_manor2 from '../../assets/images/gallery/your-manor/2.png';
+import your_manor3 from '../../assets/images/gallery/your-manor/3.png';
+import your_manor4 from '../../assets/images/gallery/your-manor/4.png';
+import your_manor5 from '../../assets/images/gallery/your-manor/5.png';
 
 const projects = [{
   img: gallery1,
@@ -20,6 +25,7 @@ const projects = [{
   desc: 'your-manor.com is a peer-to-peer real estate marketplace. It allows buyers and sellers to have direct communication without a third-party realtor being involved. This can save you up to 6% commissions that is paid to the realtor. It is capable of signing legal documents, sending emails based on even triggers, and receiving form data.',
   url: 'https://your-manor.com/',
   type: 'modal',
+  imgs: [your_manor1, your_manor2, your_manor3, your_manor4, your_manor5]
 }, {
   img: gallery3,
   title: 'Archi Interior Design',
@@ -122,6 +128,7 @@ function ProjectModalType({project, children}) {
         title={project.title}
         desc={project.desc}
         url={project.url}
+        imgs={project.imgs}
       />
     </>
   )

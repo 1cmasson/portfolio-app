@@ -2,10 +2,12 @@ import { styled } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
-import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from "swiper";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -45,22 +47,46 @@ export default function ProjectModal({
   handleClose,
   title,
   desc,
-  url
+  url,
+  imgs
 }) {
   return (
     <BootstrapDialog
       onClose={handleClose}
-      aria-labelledby="customized-dialog-title"
+      aria-labelledby="project-modal-title"
       open={open}
+      fullWidth maxWidth="md"
     >
-      <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
+      <BootstrapDialogTitle id="project-modal-title" onClose={handleClose}>
         {title}
       </BootstrapDialogTitle>
       <DialogContent dividers>
+        {imgs && (
+          <Box mb={5}>
+            <Swiper
+              pagination={{
+                type: "fraction",
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation]}
+            >
+              {imgs.map(img => (
+                <SwiperSlide>
+                  <img src={img} alt="" />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </Box>
+        )}
         {desc && (
-          <Typography gutterBottom>
-            {desc}
-          </Typography>
+          <>
+            <Typography variant='h6' gutterBottom>
+              Project description
+            </Typography>
+            <Typography gutterBottom>
+              {desc}
+            </Typography>
+          </>
         )}
         {url && (
           <a href={url} target="_blank" rel="noreferrer">
