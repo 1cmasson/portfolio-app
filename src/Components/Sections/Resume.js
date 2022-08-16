@@ -16,16 +16,17 @@ function Resume() {
               <h3 className="s_border">Experiences</h3>
               <ul className="d_timeline">
                 <li className="d_timeline-item">
-                  <h3 className="d_timeline-title">2014 - now</h3>
-                  <p className="d_timeline-text"><span className="d_title">Founder &amp; Creative Director</span><span className="d_company">Kyros Studio</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora perferendis vero officia enim impedit voluptatem dignissimos, veniam ratione est alias rerum aperiam, nam aliquam reprehenderit iste dolor.</p>
-                </li>
-                <li className="d_timeline-item">
-                  <h3 className="d_timeline-title">2010 - 2014</h3>
-                  <p className="d_timeline-text"><span className="d_title">Senior UI / UX Designer</span><span className="d_company">Google Inc</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora perferendis vero officia enim impedit voluptatem dignissimos, veniam ratione est alias rerum aperiam, nam aliquam reprehenderit iste dolor.</p>
-                </li>
-                <li className="d_timeline-item">
-                  <h3 className="d_timeline-title">2008 - 2010</h3>
-                  <p className="d_timeline-text"><span className="d_title">Graphic Designer</span><span className="d_company">Kyros Studio</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora perferendis vero officia enim impedit voluptatem dignissimos, veniam ratione est alias rerum aperiam, nam aliquam reprehenderit iste dolor.</p>
+                  <h3 className="d_timeline-title">2021 - now</h3>
+                  <p className="d_timeline-text">
+                    <span className="d_title">Software Engineer</span>
+                    <span className="d_company">The Home Depot</span>
+                    <ul>
+                      <li>Managed web development projects from conceptual design to deployment following an agile development process.</li>
+                      <li>Worked with UX Designers to build a standardized UI component library for homedepot.com that are complaint to Web Content Accessibility Guidelines (WCAG).</li>
+                      <li>Worked with a team of developers to build a CI/CD platform for faster deployment and better maintenance of online web pages. </li>
+                      <li>Created documentation for understanding the applications that my team built and maintains.</li>
+                    </ul>
+                  </p>
                 </li>
               </ul>
             </div>
@@ -35,16 +36,18 @@ function Resume() {
               <h3 className="s_border">Education</h3>
               <ul className="d_timeline">
                 <li className="d_timeline-item">
-                  <h3 className="d_timeline-title">2004 - 2008</h3>
-                  <p className="d_timeline-text"><span className="d_title">Master in Design</span><span className="d_company">New York University</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora perferendis vero officia enim impedit voluptatem dignissimos, veniam ratione est alias rerum aperiam, nam aliquam reprehenderit iste dolor.</p>
+                  <h3 className="d_timeline-title">2019 - 2021</h3>
+                  <p className="d_timeline-text">
+                    <span className="d_title">Bachelor's degree, Computer science</span>
+                    <span className="d_company">Florida International University</span>
+                  </p>
                 </li>
                 <li className="d_timeline-item">
-                  <h3 className="d_timeline-title">2004 - 2008</h3>
-                  <p className="d_timeline-text"><span className="d_title">Bachelor of Arts</span><span className="d_company">University of London</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora perferendis vero officia enim impedit voluptatem dignissimos, veniam ratione est alias rerum aperiam, nam aliquam reprehenderit iste dolor.</p>
-                </li>
-                <li className="d_timeline-item">
-                  <h3 className="d_timeline-title">2006 - 2004</h3>
-                  <p className="d_timeline-text"><span className="d_title">Artist of College</span><span className="d_company">University of Sydney</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora perferendis vero officia enim impedit voluptatem dignissimos, veniam ratione est alias rerum aperiam, nam aliquam reprehenderit iste dolor.</p>
+                  <h3 className="d_timeline-title">2015 - 2019</h3>
+                  <p className="d_timeline-text">
+                    <span className="d_title">Associate of Arts (AA), Computer science</span>
+                    <span className="d_company">Miami Dade College</span>
+                  </p>
                 </li>
               </ul>
             </div>
