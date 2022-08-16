@@ -1,9 +1,9 @@
 import ScrollAnimate from '../ScrollAnimate';
-import Misc2 from '../../assets/images/misc/2.png';
+import picture from '../../assets/images/misc/picture.png';
 
 function Hero() {
   return (
-    <section aria-label="section" className="jarallax no-top-md no-bottom sm-pt-120 overflow-hidden">
+    <section aria-label="section" className="jarallax no-top-md no-bottom sm-pt-120 section-hero">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6">
@@ -49,8 +49,8 @@ function Hero() {
             <ScrollAnimate
               as="img"
               animate="animate__fadeInUp"
-              src={Misc2}
-              className="img-fluid"
+              src={picture}
+              className="img-fluid profile-picture"
               alt=""
               style={{
                 animationDelay: '0.8s'
