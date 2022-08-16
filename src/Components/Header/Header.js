@@ -1,5 +1,3 @@
-import Logo from '../../assets/images/logo-3.png';
-
 function Header() {
   return (
     <header className="transparent header-light">
@@ -11,8 +9,7 @@ function Header() {
                 <div className="de-flex-col">
                     {/* logo begin */}
                     <div id="logo">
-                      <img alt="" className="logo" src={Logo} />
-                      <img alt="" className="logo-2" src={Logo} />
+                      <h3><span className="id-color-2">-</span> CARLOS <span className="id-color-2">-</span></h3>
                     </div>
                     {/* logo close */}
                 </div>

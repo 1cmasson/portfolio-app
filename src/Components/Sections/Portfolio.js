@@ -10,7 +10,7 @@ import gallery6 from '../../assets/images/gallery/gallary6.png';
 const projects = [{
   img: gallery1,
   title: 'Dashboard React & Material',
-  url: '/dashboard'
+  url: '/projects/dashboard'
 }, {
   img: gallery2,
   title: 'Archi Interior Design'
@@ -69,7 +69,7 @@ function Project({project, index}) {
         }}
       >
         {project.url ? (
-          <Link to={project.url}>
+          <Link to={project.url} target="_blank" rel="noreferrer">
             {content}
           </Link>
         ) : content}

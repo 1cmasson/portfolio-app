@@ -45,7 +45,7 @@ function Hero() {
               }}
             >My Resume</ScrollAnimate>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 text-center">
             <ScrollAnimate
               as="img"
               animate="animate__fadeInUp"
