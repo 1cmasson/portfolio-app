@@ -4996,10 +4996,14 @@ i.font60 {
 .card-image-1 {
 	position: relative;
 	overflow: hidden;
+	aspect-ratio: 4 / 3;
 }
 
 .card-image-1 img {
 	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .card-image-1:hover img {

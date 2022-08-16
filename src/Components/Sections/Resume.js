@@ -17,7 +17,7 @@ function Resume() {
               <ul className="d_timeline">
                 <li className="d_timeline-item">
                   <h3 className="d_timeline-title">2021 - now</h3>
-                  <p className="d_timeline-text">
+                  <div className="d_timeline-text">
                     <span className="d_title">Software Engineer</span>
                     <span className="d_company">The Home Depot</span>
                     <ul>
@@ -26,7 +26,7 @@ function Resume() {
                       <li>Worked with a team of developers to build a CI/CD platform for faster deployment and better maintenance of online web pages. </li>
                       <li>Created documentation for understanding the applications that my team built and maintains.</li>
                     </ul>
-                  </p>
+                  </div>
                 </li>
               </ul>
             </div>
