@@ -3,7 +3,19 @@ import PropTypes from 'prop-types';
 import { throttle } from 'lodash';
 import classNames from 'classnames';
 
-const ScrollEffect = (props) => {
+const ScrollAnimate = ({
+  as,
+  animate,
+  offset,
+  className,
+  duration,
+  queueDuration,
+  queueClass,
+  callback,
+  children,
+  style,
+  ...rest
+}) => {
   const [animated, setAnimated] = useState(false);
   const node = useRef();
 
@@ -23,12 +35,12 @@ const ScrollEffect = (props) => {
       const elementPositionY = element.getBoundingClientRect().top + top;
       const scrollPositionY = window.scrollY ? window.scrollY : window.pageYOffset;
       const windowHeight = window.innerHeight;
-      if (scrollPositionY + (windowHeight) >= elementPositionY + (props.offset * 1)) {
+      if (scrollPositionY + (windowHeight) >= elementPositionY + (offset * 1)) {
         setAnimated(true);
-        if (props.queueClass) {
+        if (queueClass) {
           queueAnimate();
         }
-        if (props.callback) {
+        if (callback) {
           singleAnimate();
         }
       }
@@ -49,15 +61,15 @@ const ScrollEffect = (props) => {
   const queueAnimate = () => {
     const element = node.current;
     const checkClass = el =>
-      el.className === props.queueClass;
+      el.className === queueClass;
     let number = 0;
     const setClass = (el) => {
       const element1 = el;
       element1.style.visibility = 'hidden';
       setTimeout(() => {
         element1.style.visibility = 'visible';
-        element1.className = `${element1.className} animate__animated ${props.animate}`;
-      }, number * (props.queueDuration * 1000));
+        element1.className = `${element1.className} animate__animated ${animate}`;
+      }, number * (queueDuration * 1000));
       number += 1;
     };
     const findClass = (element2) => {
@@ -74,8 +86,8 @@ const ScrollEffect = (props) => {
 
     // Callback 
     setTimeout(() => {
-      props.callback();
-    }, props.duration * 1000 * number);
+      callback();
+    }, duration * 1000 * number);
   }
 
   // This is for the callback function to work.
@@ -83,41 +95,47 @@ const ScrollEffect = (props) => {
     setAnimated(true);
     /* callback */
     setTimeout(() => {
-      props.callback();
-    }, props.duration * 1000);
+      callback();
+    }, duration * 1000);
   }
 
-  const style = {};
+  const defaultStyle = {};
   if (!animated) {
-    style.visibility = 'hidden';
+    defaultStyle.visibility = 'hidden';
   }
 
-  if (props.duration !== '') {
-    style.WebkitAnimationDuration = `${props.duration}s`;
-    style.animationDuration = `${props.duration}s`;
+  if (duration !== '') {
+    defaultStyle.WebkitAnimationDuration = `${duration}s`;
+    defaultStyle.animationDuration = `${duration}s`;
   }
+
+  const Component = as;
 
   return (
-    <div
+    <Component
       className={
         classNames(
           {
             animate__animated: true,
-            [props.animate]: animated && props.queueClass === '',
+            [animate]: animated && queueClass === '',
           },
-          props.className
+          className
         )
       }
-      style={{style, ...props.style}}
+      style={{
+        ...defaultStyle,
+        ...style
+      }}
       ref={node}
+      {...rest}
     >
-      {props.children}
-    </div>
+      {children}
+    </Component>
   );
 }
 
-ScrollEffect.defaultProps = {
-  component: 'div',
+ScrollAnimate.defaultProps = {
+  as: 'div',
   animate: 'animate__fadeInUp',
   offset: 100,
   className: '',
@@ -127,7 +145,8 @@ ScrollEffect.defaultProps = {
   callback: () => {}
 };
 
-ScrollEffect.propTypes = {
+ScrollAnimate.propTypes = {
+  as: PropTypes.string,
   animate: PropTypes.string,
   callback: PropTypes.func,
   duration: PropTypes.number,
@@ -136,4 +155,4 @@ ScrollEffect.propTypes = {
   queueDuration: PropTypes.number,
 };
 
-export default ScrollEffect;
+export default ScrollAnimate;

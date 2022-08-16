@@ -1,15 +1,17 @@
+import ScrollAnimate from '../ScrollAnimate';
+
 function Resume() {
   return (
     <section id="section-resume">
       <div className="container relative">
         <div className="row">
-          <div className="col-md-12 text-center animate__animated animate__fadeInUp">
+          <ScrollAnimate className="col-md-12 text-center">
             <h2>My Resume</h2>
             <div className="space-border"></div>
-          </div>
+          </ScrollAnimate>
         </div>
         <div className="row gh-5">
-          <div className="col-lg-6 animate__animated animate__fadeInUp">
+          <ScrollAnimate className="col-lg-6">
             <div className="p-4">
               <h3 className="s_border">Experiences</h3>
               <ul className="d_timeline">
@@ -27,8 +29,8 @@ function Resume() {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="col-lg-6 animate__animated animate__fadeInUp">
+          </ScrollAnimate>
+          <ScrollAnimate className="col-lg-6">
             <div className="p-4">
               <h3 className="s_border">Education</h3>
               <ul className="d_timeline">
@@ -46,7 +48,7 @@ function Resume() {
                 </li>
               </ul>
             </div>
-          </div>
+          </ScrollAnimate>
         </div>
       </div>
     </section>

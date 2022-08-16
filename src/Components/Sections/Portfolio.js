@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ScrollAnimate from '../ScrollAnimate';
 import gallery1 from '../../assets/images/gallery/gallary1.png';
 import gallery2 from '../../assets/images/gallery/gallary2.png';
 import gallery3 from '../../assets/images/gallery/gallary3.png';
@@ -32,10 +33,10 @@ function Portfolio() {
     <section id="section-portfolio" className="no-bottom">
       <div className="container relative">
         <div className="row">
-          <div className="col-md-12 text-center animate__animated animate__fadeInUp">
+          <ScrollAnimate className="col-md-12 text-center">
             <h2>Portfolio</h2>
             <div className="space-border"></div>
-          </div>
+          </ScrollAnimate>
         </div>
         <div id="gallery" className="row sequence">
           {projects.map((project, i) => <Project key={i} project={project} index={i} />)}
@@ -61,8 +62,8 @@ function Project({project, index}) {
   );
 
     return (
-      <div
-        className="col-md-4 item animate__animated animate__fadeInUp"
+      <ScrollAnimate
+        className="col-md-4 item"
         style={{
           animationDelay: `${delay}s`
         }}
@@ -72,6 +73,6 @@ function Project({project, index}) {
             {content}
           </Link>
         ) : content}
-      </div>
+      </ScrollAnimate>
     );
 };

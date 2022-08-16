@@ -1,16 +1,18 @@
+import ScrollAnimate from '../ScrollAnimate';
+
 function Services() {
   return (
     <section id="section-services" className="no-bottom">
       <div className="container relative">
         <div className="row">
-          <div className="col-md-12 text-center animate__animated animate__fadeInUp">
+          <ScrollAnimate className="col-md-12 text-center">
             <h2>What I Do</h2>
             <div className="space-border"></div>
-          </div>
+          </ScrollAnimate>
           <div className="spacer-single"></div>
           <div className="row g-0">
-            <div
-              className="col-lg-4 text-center animate__animated animate__fadeIn"
+            <ScrollAnimate
+              className="col-lg-4 text-center"
               style={{
                 animationDelay: '0.2s'
               }}
@@ -24,9 +26,9 @@ function Services() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              className="col-lg-4 text-center animate__animated animate__fadeIn"
+            </ScrollAnimate>
+            <ScrollAnimate
+              className="col-lg-4 text-center"
               style={{
                 animationDelay: '0.4s'
               }}
@@ -40,9 +42,9 @@ function Services() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              className="col-lg-4 text-center animate__animated animate__fadeIn"
+            </ScrollAnimate>
+            <ScrollAnimate
+              className="col-lg-4 text-center"
               style={{
                 animationDelay: '0.6s'
               }}
@@ -56,7 +58,7 @@ function Services() {
                   </div>
                 </div>
               </div>
-            </div>
+            </ScrollAnimate>
           </div>
         </div>
       </div>
