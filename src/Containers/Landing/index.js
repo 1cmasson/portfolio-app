@@ -14,8 +14,23 @@ function Landing() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
+      setTimeout(() => {
+        scrollToComment();
+      }, 500)
     }, 1500)
   }, []);
+
+  const scrollToComment = () => {
+    let currentLocation = window.location.href;
+    const hasCommentAnchor = currentLocation.includes("/#");
+    if (hasCommentAnchor) {
+      const anchorCommentId = `${currentLocation.substring(currentLocation.indexOf("#") + 1)}`;
+      const anchorComment = document.getElementById(anchorCommentId);
+      if(anchorComment){
+        anchorComment.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }
 
   if (isLoading) {
     return <PreLoader />;

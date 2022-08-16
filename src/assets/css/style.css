@@ -4997,6 +4997,7 @@ i.font60 {
 	position: relative;
 	overflow: hidden;
 	aspect-ratio: 4 / 3;
+	border: 1px solid rgba(203, 124, 111, 0.2);
 }
 
 .card-image-1 img {
@@ -17868,4 +17869,6 @@ img {
 	padding: 0px 16px;
 	background: var(--primary-color);
 	color: #fff;
+	left: auto;
+	right: 0;
 }

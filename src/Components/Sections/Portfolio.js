@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import ScrollAnimate from '../ScrollAnimate';
 import ProjectModal from '../ProjectModal';
 import gallery1 from '../../assets/images/gallery/gallary1.png';
@@ -28,19 +27,19 @@ const projects = [{
   imgs: [your_manor1, your_manor2, your_manor3, your_manor4, your_manor5]
 }, {
   img: gallery3,
-  title: 'Archi Interior Design',
+  title: 'Voting BlockChain',
   type: 'url',
-  url: '/projects/dashboard'
+  url: 'https://vigilant-leavitt-4133eb.netlify.app/'
 }, {
   img: gallery4,
-  title: 'Archi Interior Design',
+  title: 'Covid-19 Tracker',
   type: 'url',
-  url: '/projects/dashboard'
+  url: 'https://zealous-bhabha-ac12e5.netlify.app/'
 }, {
   img: gallery5,
-  title: 'Archi Interior Design',
+  title: 'BOLT',
   type: 'url',
-  url: '/projects/dashboard'
+  url: 'https://goofy-joliot-9dcc70.netlify.app/'
 }, {
   img: gallery6,
   title: 'Archi Interior Design',
@@ -101,9 +100,9 @@ function Project({project, index}) {
 
 function ProjectURLType({project, children}) {
   return (
-    <Link to={project.url} target="_blank" rel="noreferrer">
+    <a href={project.url} target="_blank" rel="noreferrer">
       {children}
-    </Link>
+    </a>
   )
 }
 

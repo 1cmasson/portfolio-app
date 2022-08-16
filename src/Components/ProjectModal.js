@@ -70,8 +70,8 @@ export default function ProjectModal({
               navigation={true}
               modules={[Pagination, Navigation]}
             >
-              {imgs.map(img => (
-                <SwiperSlide>
+              {imgs.map((img, i) => (
+                <SwiperSlide key={i}>
                   <img src={img} alt="" />
                 </SwiperSlide>
               ))}
