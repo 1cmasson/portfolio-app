@@ -23,7 +23,7 @@ function Hero() {
                 animationDelay: '0.6s'
               }}
             >
-              Hi, I'm <span className="id-color-2">Carlos Masson</span><br />,  a Full-stack Web Developer.
+              Hi, I'm <span className="id-color-2">Carlos Masson</span><br />a Full-stack Web Developer.
             </ScrollAnimate>
             <ScrollAnimate
               as="p"
@@ -35,7 +35,7 @@ function Hero() {
               I am a full-stack developer from Florida, with a strong focus in web development. I like going through new experiences and learning from the journey. I look forward to finding new opportunities and challenges.
             </ScrollAnimate>
             <div className="spacer-10"></div>
-            <ScrollAnimate
+            {/* <ScrollAnimate
               as="a"
               animate="animate__fadeInUp"
               className="btn-main"
@@ -43,7 +43,7 @@ function Hero() {
               style={{
                 animationDelay: '0.6s'
               }}
-            >My Resume</ScrollAnimate>
+            >My Resume</ScrollAnimate> */}
           </div>
           <div className="col-md-6 text-center">
             <ScrollAnimate

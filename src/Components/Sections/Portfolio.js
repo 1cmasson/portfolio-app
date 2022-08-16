@@ -6,7 +6,7 @@ import gallery2 from '../../assets/images/gallery/gallary2.png';
 import gallery3 from '../../assets/images/gallery/gallary3.png';
 import gallery4 from '../../assets/images/gallery/gallary4.png';
 import gallery5 from '../../assets/images/gallery/gallary5.png';
-import gallery6 from '../../assets/images/gallery/gallary6.png';
+// import gallery6 from '../../assets/images/gallery/gallary6.png';
 import your_manor1 from '../../assets/images/gallery/your-manor/1.png';
 import your_manor2 from '../../assets/images/gallery/your-manor/2.png';
 import your_manor3 from '../../assets/images/gallery/your-manor/3.png';
@@ -40,11 +40,6 @@ const projects = [{
   title: 'BOLT',
   type: 'url',
   url: 'https://goofy-joliot-9dcc70.netlify.app/'
-}, {
-  img: gallery6,
-  title: 'Archi Interior Design',
-  type: 'url',
-  url: '/projects/dashboard'
 }]
 
 function Portfolio() {
