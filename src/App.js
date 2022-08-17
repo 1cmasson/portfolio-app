@@ -1,6 +1,7 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Landing from './Containers/Landing';
 import Dashboard from './Containers/Projects/Dashboard';
+import StockChart from './Containers/Projects/StockChart';
 
 // styles
 // Import Swiper styles
@@ -24,7 +25,17 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/projects">
             <Route path="dashboard" element={<Dashboard />} />
+            <Route path="stock-chart" element={<StockChart />} />
           </Route>
+          <Route
+            path="*"
+            element={
+              <Navigate
+                to={{ pathname: '/' }}
+                replace
+              />
+            }
+          />
         </Routes>
       </BrowserRouter>
     </div>
