@@ -5,7 +5,7 @@
   },
   {
     "lbl": "Vue",
-    "v": 90
+    "v": 100
   },
   {
     "lbl": "Node.js",
@@ -25,7 +25,23 @@
   },
   {
     "lbl": "Express",
-    "v": 80
+    "v": 90
+  },
+  {
+    "lbl": "PHP",
+    "v": 90
+  },
+  {
+    "lbl": "Laravel",
+    "v": 90
+  },
+  {
+    "lbl": "Python",
+    "v": 90
+  },
+  {
+    "lbl": "Django",
+    "v": 90
   },
   {
     "lbl": "CSS",
@@ -37,15 +53,15 @@
   },
   {
     "lbl": "Software Architecture & Design",
-    "v": 90
+    "v": 100
   },
   {
     "lbl": "API Integration",
-    "v": 90
+    "v": 100
   },
   {
     "lbl": "Database Architecture",
-    "v": 80
+    "v": 90
   },
   {
     "lbl": "UX & UI",
@@ -53,6 +69,6 @@
   },
   {
     "lbl": "Agile Methodology",
-    "v": 80
+    "v": 90
   }
 ]

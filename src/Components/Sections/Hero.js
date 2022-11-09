@@ -25,15 +25,6 @@ function Hero() {
             >
               Hi, I'm <span className="id-color-2">Carlos Masson</span><br />a Full-stack Web Developer.
             </ScrollAnimate>
-            <ScrollAnimate
-              as="p"
-              animate="animate__fadeInUp"
-              style={{
-                animationDelay: '0.6s'
-              }}
-            >
-              I am a full-stack developer from Florida, with a strong focus in web development. I like going through new experiences and learning from the journey. I look forward to finding new opportunities and challenges.
-            </ScrollAnimate>
             <div className="spacer-10"></div>
             {/* <ScrollAnimate
               as="a"

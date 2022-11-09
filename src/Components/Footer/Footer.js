@@ -23,7 +23,7 @@ function Footer() {
                 <i className="fa fa-linkedin fa-lg" />
               </a>
               <a
-                href="https://github.com/carninojo15"
+                href="https://github.com/1cmasson"
                 target="_blank"
                 rel="noreferrer"
               >
