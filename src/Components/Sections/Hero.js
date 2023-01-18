@@ -26,15 +26,6 @@ function Hero() {
               Hi, I'm <span className="id-color-2">Carlos Masson</span><br />a Full-stack Web Developer.
             </ScrollAnimate>
             <div className="spacer-10"></div>
-            {/* <ScrollAnimate
-              as="a"
-              animate="animate__fadeInUp"
-              className="btn-main"
-              href="index-v2-light.html#section-resume"
-              style={{
-                animationDelay: '0.6s'
-              }}
-            >My Resume</ScrollAnimate> */}
           </div>
           <div className="col-md-6 text-center">
             <ScrollAnimate

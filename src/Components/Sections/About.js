@@ -13,8 +13,11 @@ function About() {
         <div className="row">
           <ScrollAnimate className="col-md-12">
             <h2>About Me</h2>
-            <p>I am a  Fullstack developer. I graduated from Florida International University in 2021 with a Bachelor's in Computer Science. Over the past 5 years, I have been part of numerous enterprise development projects, as a developer. I am a unicorn of the technical world; being able to design,develop, and architect solutions.</p>
-            <p>When I am not busy with work, I enjoy comic books, movies, gaming, and tennis.</p>
+            <p>I am a Fullstack Web Developer with 7 years of experience. I am offering SPA development with React and Vue, Dashboard development with React, Chart library, Widgets, and DnD, and Backend development with Node, Express, Python, and Django.</p>
+            <p>As a web developer, I design, develop, enhance, test and deploy web applications with the end goal of creating engaging and user-friendly site layouts and functions. I gather and define requirements, maintain websites, troubleshoot and fix bugs, follow best practices, and collaborate with other teams.</p>
+            <p>I’m proficient in React, Vue, CSS, JavaScript, TypeScript, Node, and Python and I have intermediate-level proficiency in PHP and Laravel. I would love to expand my skills to include ChatGPT and am currently researching the right ChatGPT course to take in my free time.</p>
+            <p>If you like what you see, please invite me to apply to your job, and let's connect to see if my skillsets match what you're looking for.</p>
+            <p>Thank you for reading my profile!</p>
           </ScrollAnimate>
           <ScrollAnimate
             className="col-md-6"

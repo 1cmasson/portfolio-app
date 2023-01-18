@@ -8,12 +8,16 @@
     "v": 100
   },
   {
-    "lbl": "Node.js",
+    "lbl": "Node + npm",
+    "v": 100
+  },
+  {
+    "lbl": "Express",
     "v": 100
   },
   {
     "lbl": "NestJS",
-    "v": 100
+    "v": 90
   },
   {
     "lbl": "JavaScript",
@@ -24,48 +28,24 @@
     "v": 100
   },
   {
-    "lbl": "Express",
-    "v": 90
+    "lbl": "HTML and CSS",
+    "v": 100
   },
   {
-    "lbl": "PHP",
-    "v": 90
-  },
-  {
-    "lbl": "Laravel",
-    "v": 90
+    "lbl": "JSX",
+    "v": 100
   },
   {
     "lbl": "Python",
-    "v": 90
+    "v": 100
   },
   {
     "lbl": "Django",
     "v": 90
   },
   {
-    "lbl": "CSS",
+    "lbl": "Git",
     "v": 100
-  },
-  {
-    "lbl": "GraphQL",
-    "v": 90
-  },
-  {
-    "lbl": "Software Architecture & Design",
-    "v": 100
-  },
-  {
-    "lbl": "API Integration",
-    "v": 100
-  },
-  {
-    "lbl": "Database Architecture",
-    "v": 90
-  },
-  {
-    "lbl": "UX & UI",
-    "v": 90
   },
   {
     "lbl": "Agile Methodology",

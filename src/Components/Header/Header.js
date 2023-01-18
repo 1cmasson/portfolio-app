@@ -25,8 +25,7 @@ function Header() {
                   <li><a href="#section-services">What I Do</a></li>
                   <li><a href="#section-portfolio">Portfolio</a></li>
                   <li><a href="#section-resume">My Resume</a></li>
-                  {/* <li><a href="#section-blog">Blog</a></li> */}
-                  {/* <li><a href="#section-contact">Contact Me</a></li> */}
+                  <li><a href="#section-contact">Contact Me</a></li>
                 </ul>
               </div>
             </div>

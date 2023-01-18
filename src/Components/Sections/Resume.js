@@ -21,7 +21,7 @@ function Resume() {
                     <span className="d_title">Software Engineer II</span>
                     <span className="d_company">The Home Depot</span>
                     <ul>
-                      <li>Skills: React.js · JavaScript · GraphQL</li>
+                      <li>Skills: React.js · Node.js · JavaScript · MongoDB</li>
                     </ul>
                   </div>
                 </li>
