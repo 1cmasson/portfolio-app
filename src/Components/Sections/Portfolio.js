@@ -7,11 +7,14 @@ import gallery3 from '../../assets/images/gallery/gallary3.png';
 import gallery4 from '../../assets/images/gallery/gallary4.png';
 import gallery5 from '../../assets/images/gallery/gallary5.png';
 import gallery6 from '../../assets/images/gallery/gallary6.png';
+import gallery7 from '../../assets/images/gallery/gallary7.png';
 import your_manor1 from '../../assets/images/gallery/your-manor/1.png';
 import your_manor2 from '../../assets/images/gallery/your-manor/2.png';
 import your_manor3 from '../../assets/images/gallery/your-manor/3.png';
 import your_manor4 from '../../assets/images/gallery/your-manor/4.png';
 import your_manor5 from '../../assets/images/gallery/your-manor/5.png';
+import ecommerce_platform_01 from '../../assets/images/gallery/ecommerce-platform/01.png';
+import ecommerce_platform_02 from '../../assets/images/gallery/ecommerce-platform/02.png';
 
 const projects = [{
   img: gallery1,
@@ -20,11 +23,34 @@ const projects = [{
   url: '/projects/dashboard'
 }, {
   img: gallery2,
-  title: 'Your-Manor',
-  desc: 'your-manor.com is a peer-to-peer real estate marketplace. It allows buyers and sellers to have direct communication without a third-party realtor being involved. This can save you up to 6% commissions that is paid to the realtor. It is capable of signing legal documents, sending emails based on even triggers, and receiving form data.',
-  url: 'https://your-manor.com/',
+  title: 'Real Estate Marketplace',
+  desc: [
+    'I was a full-stack developer on a project for a peer-to-peer real estate marketplace called "your-manor".',
+    'My task was to develop a platform that allowed for direct communication between buyers and sellers, without the need for a third-party realtor. This was intended to save users up to 6% in commission fees typically paid to realtors.',
+    'I implemented a number of features to achieve this goal, including the ability for users to sign legal documents, automatic email triggers based on specific events, and the ability for users to submit and receive form data.',
+    'The final product was a successful and user-friendly platform that allowed for seamless communication between buyers and sellers, resulting in cost savings for users and increased efficiency in the real estate transaction process.',
+    'Skills: React, Redux, Node, Express, JavaScript, TypeScript, CSS, API Integration, Real Estate'
+  ],
+  // url: 'https://your-manor.com/',
   type: 'modal',
   imgs: [your_manor1, your_manor2, your_manor3, your_manor4, your_manor5]
+}, {
+  img: gallery6,
+  title: 'Stock Chart',
+  type: 'url',
+  url: '/projects/stock-chart'
+}, {
+  img: gallery7,
+  title: 'Ecommerce Platform',
+  desc: [
+    'I was working as a lead front-end developer on a project for a large retail company.',
+    'The task was to create a new e-commerce platform that would be used by thousands of customers daily.',
+    'I led a team of developers and designers to create a custom-built e-commerce platform using React.js, Node.js and Shopify. We implemented a microservices architecture and used agile development methodologies to ensure timely delivery.',
+    'The new platform was launched on schedule and has since seen a 30% increase in online sales for the company, as well as positive feedback from customers about the improved user experience.',
+    'Skills: React, Shopify, Ecommerce'
+  ],
+  type: 'modal',
+  imgs: [ecommerce_platform_01, ecommerce_platform_02]
 }, {
   img: gallery3,
   title: 'Voting BlockChain',
@@ -40,11 +66,6 @@ const projects = [{
   title: 'BOLT',
   type: 'url',
   url: 'https://goofy-joliot-9dcc70.netlify.app/'
-}, {
-  img: gallery6,
-  title: 'Stock Chart',
-  type: 'url',
-  url: '/projects/stock-chart'
 }]
 
 function Portfolio() {

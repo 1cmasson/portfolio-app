@@ -83,9 +83,11 @@ export default function ProjectModal({
             <Typography variant='h6' gutterBottom>
               Project description
             </Typography>
-            <Typography gutterBottom>
-              {desc}
-            </Typography>
+            {desc.map((item) => (
+              <Typography sx={{ mb: '16px' }}>
+                {item}
+              </Typography>
+            ))}
           </>
         )}
         {url && (

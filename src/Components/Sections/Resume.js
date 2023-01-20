@@ -20,9 +20,7 @@ function Resume() {
                   <div className="d_timeline-text">
                     <span className="d_title">Software Engineer II</span>
                     <span className="d_company">The Home Depot</span>
-                    <ul>
-                      <li>Skills: React.js · Node.js · JavaScript · MongoDB</li>
-                    </ul>
+                    <span>As a lead developer at The Home Depot, a top Fortune 500, I have gained valuable experience in managing projects, while also contributing to the implementation of new features and functionality on our e-commerce platform. My role includes working closely with marketing teams, mentoring junior developers, and ensuring high-quality and timely delivery of projects. Additionally, I have been able to further develop my skills in React and contribute to the company's continued success.</span>
                   </div>
                 </li>
                 <li className="d_timeline-item">
@@ -30,9 +28,8 @@ function Resume() {
                   <div className="d_timeline-text">
                     <span className="d_title">Software Engineer</span>
                     <span className="d_company">The Home Depot</span>
-                    <ul>
-                      <li>Skills: React.js · Node.js · JavaScript · MongoDB</li>
-                    </ul>
+                    <span>As a React Developer at The Home Depot, a leading home improvement retailer with over 2,200 stores worldwide, I was responsible for building and maintaining the company's e-commerce platform.</span>
+                    <span>I collaborated with a team of developers to implement new features and improve the overall user experience for customers. My role required strong skills in React, JavaScript, and web development.</span>
                   </div>
                 </li>
               </ul>
