@@ -19,7 +19,61 @@ a.btn-main,
   -webkit-border-radius: 8px;
 }
 
-.jarallax {
+.section-hero {
+  background-image: url('../images/background/me.png'), url('../images/background/l5.jpg');
+  background-size: auto 100%, cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.section-resume {
+  background-image: url('../images/background/l6.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-resume::after {
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  content: "";
+  height: 50%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.section-resume::before {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
+  bottom: 0;
+  content: "";
+  height: 50%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.section-contact {
   background-image: url('../images/background/l5.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-contact::after {
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  content: "";
+  height: 50%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.section-contact::before {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
+  height: 25%;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }

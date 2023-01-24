@@ -83,8 +83,8 @@ export default function ProjectModal({
             <Typography variant='h6' gutterBottom>
               Project description
             </Typography>
-            {desc.map((item) => (
-              <Typography sx={{ mb: '16px' }}>
+            {desc.map((item, idx) => (
+              <Typography key={idx} sx={{ mb: '16px' }}>
                 {item}
               </Typography>
             ))}

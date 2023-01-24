@@ -56,7 +56,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="section-contact" className="jarallax">
+    <section id="section-contact" className="section-contact">
       <div className="de-gradient-edge-top"></div>
       <img src="images/background/l5.jpg" className="jarallax-img" alt="" />
       <div className="container z-index-1000">

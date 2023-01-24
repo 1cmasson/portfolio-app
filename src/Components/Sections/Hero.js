@@ -3,7 +3,7 @@ import picture from '../../assets/images/misc/picture.png';
 
 function Hero() {
   return (
-    <section aria-label="section" className="jarallax no-top-md no-bottom sm-pt-120 section-hero">
+    <section aria-label="section" className="no-top-md no-bottom sm-pt-120 section-hero">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6">
@@ -27,7 +27,7 @@ function Hero() {
             </ScrollAnimate>
             <div className="spacer-10"></div>
           </div>
-          <div className="col-md-6 text-center">
+          {/* <div className="col-md-6 text-center">
             <ScrollAnimate
               as="img"
               animate="animate__fadeInUp"
@@ -38,7 +38,7 @@ function Hero() {
                 animationDelay: '0.8s'
               }}
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <ScrollAnimate

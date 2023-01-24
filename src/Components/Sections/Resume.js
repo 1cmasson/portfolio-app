@@ -2,8 +2,8 @@ import ScrollAnimate from '../ScrollAnimate';
 
 function Resume() {
   return (
-    <section id="section-resume">
-      <div className="container relative">
+    <section id="section-resume" className="section-resume">
+      <div className="container relative z-index-1000">
         <div className="row">
           <ScrollAnimate className="col-md-12 text-center">
             <h2>My Resume</h2>
